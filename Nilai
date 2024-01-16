@@ -1,0 +1,38 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.produktif_rpl2;
+
+/**
+ *
+ * @author ASUS
+ */
+import java.util.Scanner;
+public class Produktif_Rpl2 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Masukkan angka pertama: ");
+        int angka1 = input.nextInt();
+        
+        System.out.print("Masukkan angka kedua: ");
+        int angka2 = input.nextInt();
+        
+        System.out.print("Masukkan angka ketiga: ");
+        int angka3 = input.nextInt();
+        
+        int rataRata = (angka1 + angka2 + angka3) / 3;
+
+        if (rataRata >= 10 && rataRata <= 99) {
+            System.out.println("Nilai puluhan");
+        } else if (rataRata >= 100 && rataRata <= 999) {
+            System.out.println("Nilai ratusan");
+        } else if (rataRata >= 1000 && rataRata <= 9999) {
+            System.out.println("Nilai ribuan");
+        }
+        
+        input.close();
+    }
+}
